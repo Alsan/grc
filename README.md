@@ -14,9 +14,9 @@ fisher grc
 
 ## Usage
 
-Make sure to install the official grc command: <https://github.com/garabik/grc>
+Make sure to install the official grc command: <https://github.com/garabik/grc> as well.
 
-### Wrapped commands
+### Default commands
 
 * cat
 * cvs
@@ -39,9 +39,9 @@ Make sure to install the official grc command: <https://github.com/garabik/grc>
 
 ### Default options
 
-Specify default options for any wrapped command with `grc_wrap_options_<command>`.
+Specify default options for wrapped command with `grc_wrap_options_<command>`.
 
-For example, run `ls` with `-la` options by default.
+For example, to run `ls` with `-la` options by default.
 
 ```fish
 set grc_wrap_options_ls -la
@@ -52,7 +52,7 @@ set grc_wrap_options_ls -la
 Enable grc only for diff and ls.
 
 ```fish
-set -U grc_wrap_commands diff ls
+set grc_wrap_commands diff ls
 ```
 
 Restart any open terminal sessions for the change to take effect.
